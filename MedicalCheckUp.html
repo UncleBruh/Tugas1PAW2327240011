@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservasi Tanggal Medical Check-up</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <table border="1">
+        <tr>
+            <td>No</td>
+            <td>Nama Pasien</td>
+            <td>Umur</td>
+            <td>Dokter</td>
+            <td>Spesialis</td>
+            <td>Jadwal Konsultasi</td>
+            <td>Keluhan</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ahmad Fauzi</td>
+            <td>45</td>
+            <td>Dr. Budi Santoso</td>
+            <td>Spesialis Jantung</td>
+            <td>Senin, 10:00 - 12:00</td>
+            <td>Nyeri Dada</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rina Sari</td>
+            <td>32</td>
+            <td>Dr. Siti Aisyah</td>
+            <td>Spesialis Anak</td>
+            <td>Selasa, 14:00 - 16:00</td>
+            <td>Demam Anak</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fajar Hidayat</td>
+            <td>50</td>
+            <td>Dr. Andi Wijaya</td>
+            <td>Spesialis Saraf</td>
+            <td>Rabu, 09:00 - 11:00</td>
+            <td>Pusing & Migrain</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lestari Dewi</td>
+            <td>27</td>
+            <td>Dr. Indah Lestari</td>
+            <td>Spesialis Kandungan</td>
+            <td>Kamis, 13:00 - 15:00</td>
+            <td>Konsultasi Kehamilan</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Bambang Saputra</td>
+            <td>60</td>
+            <td>Dr. Yoga Pratama</td>
+            <td>Spesialis Penyakit Dalam</td>
+            <td>Jumat, 10:00 - 12:00</td>
+            <td>Diabetes</td>
+        </tr>
+    </table>
     
+    <form action="proses.php" method="post">
+        Nama Lengkap <br>
+        <input type="text" name="nama" id="nama" required> <br>
+        Umur <br>
+        <input type="text" name="nama" id="nama" required> <br>
+        Gender <br>
+        <input type="radio" name="gender" value="Laki-laki" id="M" checked> Laki-laki<br>
+        <input type="radio" name="gender" value="Perempuan" id="F"> Perempuan<br>
+        </select>
+        Keluhan <br>
+        <textarea name="Keluhan" id="Keluhan" required></textarea><br>
+        Pilih Dokter: <br>
+        <input type="radio" name="dokter" value="Dr. Budi Santoso" id="dokter1" checked> Dr. Budi Santoso (Spesialis Jantung) <br>
+        <input type="radio" name="dokter" value="Dr. Siti Aisyah" id="dokter2"> Dr. Siti Aisyah (Spesialis Anak) <br>
+        <input type="radio" name="dokter" value="Dr. Andi Wijaya" id="dokter3"> Dr. Andi Wijaya (Spesialis Saraf) <br>
+        <input type="radio" name="dokter" value="Dr. Indah Lestari" id="dokter4"> Dr. Indah Lestari (Spesialis Kandungan) <br>
+        <input type="radio" name="dokter" value="Dr. Yoga Pratama" id="dokter5"> Dr. Yoga Pratama (Spesialis Penyakit Dalam) <br>
+        <button type="submit">Kirim</button>
+        <a href="index.html">Home ||</a>
+        <a href="profil.html">Profil Klinik</a>
+    </form>
 </body>
 </html>
